@@ -1,0 +1,9 @@
+{% extends 'index.html' %}
+{% block content %}
+    <h1 style ="background-color:Tomato;">Create New Account to Login Page Nexevo</h1>
+    <form method ="POST">
+         {% csrf_token %}
+        {{form.as_p}}
+        <button>Register to Get In</button>
+    </form>
+{% endblock %}
